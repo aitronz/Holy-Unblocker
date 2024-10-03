@@ -7,7 +7,7 @@ function randomListItem(lis) {
 }
 
 function insertCharset(str) {
-    return str.replace(/&#173;|&#8203;|&shy;|<wbr>/g, function() { return randomListItem(charRandom); });
+    return str.replace(/|&#8203;|&shy;|<wbr>/g, function() { return randomListItem(charRandom); });
 }
 
 function hutaoInsert(str) {
